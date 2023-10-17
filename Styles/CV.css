@@ -1,0 +1,66 @@
+/*this is the background section*/
+.CV-box{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+  }
+/* General styles for the menu section */
+/* General styles for the menu section */
+.menu-section {
+    display: flex;
+    height: 100%;
+    width: 20%;
+    flex-direction: column;
+    background-color: #f0f0f0; /* Soft grey background color */
+    justify-content: center; /* Center menu items vertically */
+  }
+  
+  /* Menu items list */
+  .menu-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  /* Individual menu item styles */
+  .menu-item {
+    position: relative;
+    text-align: center; /* Center menu items horizontally */
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Horizontal line styles */
+  .menu-item::after {
+    content: "";
+    position: absolute;
+    width: 75%; /* 75% of menu width */
+    height: 2px;
+    background-color: #333; /* Color of the separating line */
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.2s, background-color 0.2s; /* Add transition */
+  }
+  
+  /* Hover effect on menu item above the line */
+  .menu-item:hover::after {
+    width: 100%; /* Expand to 100% width on hover */
+    background-color: #555; /* Dark grey color on hover */
+  }
+  
+  /* Darker background and dark green text on hover for menu item */
+  .menu-item:hover {
+    background-color: #d0d0d0; /* Slightly darker grey background on hover */
+    color: #006400; /* Dark green text on hover */
+  }
+  
+  /* Active menu item */
+  .active-menu-item {
+    background-color: #d0d0d0; /* Slightly darker grey background for the active item */
+    color: #006400; /* Dark green text for the active item */
+  }
